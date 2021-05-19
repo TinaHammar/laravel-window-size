@@ -152,6 +152,7 @@ Add this to any blade view to test the blade directives
 
 ## 💬 Let's connect
 * [🔗 **Twitter**](https://twitter.com/TinaHammar)
+*  🔗 Please 💗 [sponsor me](https://github.com/sponsors/tanthammar) if you like my work.
 
 ## Credits
 * [Martin Krisell](Martin Krisell)
