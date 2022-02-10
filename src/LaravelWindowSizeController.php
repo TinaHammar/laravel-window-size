@@ -3,9 +3,8 @@
 namespace Tanthammar\LaravelWindowSize;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
-class LaravelWindowSizeController extends Controller
+class LaravelWindowSizeController
 {
     /**
      * Handle the incoming request.
