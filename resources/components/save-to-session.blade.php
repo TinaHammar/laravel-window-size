@@ -1,6 +1,5 @@
 <script>
     !(function () {
-        const token = document.querySelector('meta[name="csrf-token"]').content
 
         const debounce = (callback, wait) => {
             let timeoutId = null
@@ -34,7 +33,7 @@
                 mode: 'same-origin',
                 headers: {
                     "Content-Type": "application/json; charset=utf-8",
-                    "X-CSRF-TOKEN": token
+                    "X-CSRF-TOKEN": "{{csrf_token()}}"
                 },
                 body: JSON.stringify({width: windowW, height: windowH})
             }).then()
