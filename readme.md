@@ -5,7 +5,7 @@ An example to show the purpose of this package:
 ```php 
 <?php
 
-if(windowXs()) {
+if(windowXs() || mobileDevice()) {
  //execute a tiny Eloquent query and return a minimalistic view
 }
 if(window2xl()) {
@@ -115,6 +115,9 @@ Example
 ## Helpers
 Same name as Blade directives
 ```php
+//Mobile device detection based on request header.
+mobileDevice()
+
 //Browser width, with example values
 windowWidthLessThan(400)
 windowWidthGreaterThan(399)
