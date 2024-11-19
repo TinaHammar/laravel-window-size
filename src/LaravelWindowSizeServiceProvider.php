@@ -63,5 +63,7 @@ class LaravelWindowSizeServiceProvider extends ServiceProvider
         Blade::if('windowXl', static fn () => windowXl());
 
         Blade::if('window2xl', static fn () => window2xl());
+
+        Blade::if('mobileDevice', static fn () => mobileDevice());
     }
 }
