@@ -16,9 +16,12 @@
         let windowH = 0
 
         function update() {
-            windowW = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth)
-            windowH = (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight)
+            const widths = [window.innerWidth, document.documentElement.clientWidth, document.body.clientWidth].filter(w => w > 0)
+            const heights = [window.innerHeight, document.documentElement.clientHeight, document.body.clientHeight].filter(h => h > 0)
+            windowW = widths.length ? Math.min(...widths) : 0
+            windowH = heights.length ? Math.min(...heights) : 0
         }
+
 
         function launch(w = 0, h = 0) {
             if (w < 1 && h < 1) {
